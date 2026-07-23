@@ -1,0 +1,68 @@
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
+
+.layout-body {
+  display: flex;
+  flex: 1;
+  padding-top: 70px; /* Account for fixed navbar */
+  min-height: calc(100vh - 70px);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    padding: 40px 30px;
+  }
+}
+
+/* Sidebar spacer for Admin users */
+@media (min-width: 768px) {
+  .main-content.admin-main {
+    margin-left: 240px; /* Matches default expanded sidebar width */
+    transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* When sidebar has collapsed class, adjust main content margin */
+  :has(.sidebar-glass.collapsed) .main-content.admin-main {
+    margin-left: 70px;
+  }
+}
+
+.page-wrapper {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Base fade-in animation for pages */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}

@@ -1,0 +1,76 @@
+.contact-page {
+  padding: 40px 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 100%;
+  justify-content: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+}
+
+.info-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-icon.blue {
+  background: rgba(79, 143, 255, 0.15);
+  color: var(--accent-blue);
+  border: 1px solid rgba(79, 143, 255, 0.3);
+}
+
+.info-icon.violet {
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--accent-violet);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.info-icon.magenta {
+  background: rgba(236, 72, 153, 0.15);
+  color: var(--accent-magenta);
+  border: 1px solid rgba(236, 72, 153, 0.3);
+}
+
+.info-text h4 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.info-text p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.contact-form {
+  text-align: left;
+}
+
+.contact-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.w-full {
+  width: 100%;
+}

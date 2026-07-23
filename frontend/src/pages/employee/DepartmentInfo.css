@@ -1,0 +1,77 @@
+.department-info-page {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.search-wrapper .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.search-wrapper .search-input {
+  padding-left: 36px;
+  background: var(--bg-card);
+  border-radius: 30px;
+}
+
+.dept-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dept-icon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.dept-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dept-icon.blue {
+  background: rgba(79, 143, 255, 0.15);
+  color: var(--accent-blue);
+  border: 1px solid rgba(79, 143, 255, 0.3);
+}
+
+.dept-count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dept-name {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.dept-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
